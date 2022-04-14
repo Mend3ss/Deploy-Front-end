@@ -68,7 +68,7 @@ export default function CadastroProjetos() {
         formData.append('dataConclusao', dataFinal);
         formData.append('idStatusProjeto', 1);
 
-        axios.post("http://labwatch-backend.azurewebsites.net/api/CadastrarProjetos", formData, {
+        axios.post("https://labwatch-backend.azurewebsites.net/api/CadastrarProjetos", formData, {
             headers: { "Content-Type": "multipart/form-data" }
         })
             .then((resposta) => {

@@ -26,7 +26,7 @@ export default function Login() {
 
         setErroMensagem('')
         setIsLoading(true)
-        axios.post("http://labwatch-backend.azurewebsites.net/api/Login", {
+        axios.post("https://labwatch-backend.azurewebsites.net/api/Login", {
             email: email,
             senha: senha
         })
